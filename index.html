@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="div-container">
+                <h2>Checkout form</h2>
+                <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+            </div>
+        </div>
+        <div class="main-form-container">
+            <div class="form-container">
+                <h2>Billing address</h2>
+                <form action="">
+                    <div class="input-form-container">
+                        <div class="input-form">
+                            <label for="name" class="label-form">First name</label><br>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="input-form">
+                            <label for="lastName" class="label-form">Last name</label><br>
+                            <input type="text" id="lastName" autocomplete="name" required>
+                        </div>
+                        <div class="input-form email-input">
+                            <label for="userName" class="label-form">User name</label><br>
+                            <input type="email" id="userName" required>
+                        </div>
+                        <div class="input-form email-input">
+                            <label for="email" class="label-form">Email <small>Optional</small></label><br>
+                            <input type="email" id="lastName" autocomplete="email">
+                        </div>
+                        <div class="input-form email-input">
+                            <label for="address" class="label-form">Address</label><br>
+                            <input type="text" id="address" required>
+                        </div>
+                        <div class="input-form email-input">
+                            <label for="address2" class="label-form">Address 2 <small>Optional</small></label><br>
+                            <input type="text" id="address2" >
+                        </div>
+                        <div class="input-form list-form country">
+                            <label for="countries" class="label-form">Contry</label><br>
+                            <input list="countries" name="countries" id="countries">
+                            <datalist id="countries">
+                                <option value="Colombia"></option>
+                                <option value="A tu corazon"></option>
+                                <option value="EEUU"></option>
+                            </datalist>
+                        </div>
+                        <div class="input-form list-form">
+                            <label for="state" class="label-form">State</label><br>
+                            <input list="state" id="state">
+                            <datalist id="state">
+                                <option value="Colombia"></option>
+                                <option value="A tu corazon"></option>
+                                <option value="EEUU"></option>
+                            </datalist>
+                        </div>
+                        <div class="input-form list-form">
+                            <label for="zip" class="label-form">Zip</label><br>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                    </div><br>
+                    <hr>
+                    <div>
+                        <div class="selection-form">
+                            <input type="checkbox" name="option-e" id="same-address">
+                            <label for="same-address">Shipping address is the same as my billing address</label>
+                        </div>
+                        <div class="selection-form">
+                            <input type="checkbox" name="option-e" id="save-information">
+                            <label for="save-information">Save this information for next time</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h2>Payment</h2>
+                        <div>
+                            <div>
+                                <input type="radio" name="payment" id="credit" required>
+                                <label for="credit">Credit card</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="debit" required>
+                                <label for="debit">Debit card</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="paypal" required>
+                                <label for="paypal">Paypal</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-form-container">
+                        <div class="input-form">
+                            <label for="nameCard" class="label-form">Name on card</label><br>
+                            <input type="text" id="nameCard" name="nameCard" required>
+                        </div>
+                        <div class="input-form">
+                            <label for="creditCard" class="label-form">Credit card number</label><br>
+                            <input type="text" id="creditCard" name="crediCard" required>
+                        </div>
+                        <div class="credit-inf">
+                            <div class="input-form credit-inf-input">
+                                <label for="expiration" class="label-form">Expiration</label><br>
+                                <input type="text" id="exppiration" name="expiration" required>
+                            </div>
+                            <div class="input-form credit-inf-input">
+                                <label for="cvv" class="label-form">CVV</label><br>
+                                <input type="text" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="input-submit-form"> 
+                        <button type="submit">Continue to checkout</button>
+                    </div>
+                </form>
+            </div>
+            <div class="aside-container">
+                <div class="numer-aside1">
+                    <h2>Your chart</h2>
+                    <div class="number-aside">3</div>
+                </div>
+                <ul>
+                    <li class="body-aside">
+                        <div>
+                            <h6>Product name</h6>
+                            <small>Brief description</small>
+                        </div>
+                        <span>$12</span>
+                    </li>
+                    <li class="body-aside">
+                        <div>
+                            <h6>Second product</h6>
+                            <small>Brief description</small>
+                        </div>
+                        <span>$8</span>
+                    </li>
+                    <li class="body-aside">
+                        <div>
+                            <h6>Third item</h6>
+                            <small>Brief description</small>
+                        </div>
+                        <span>$5</span>
+                    </li>
+                    <li class="body-aside h6-aside">
+                        <div>
+                            <h6>Pormo code</h6>
+                            <small>EXAMPLECODE</small>
+                        </div>
+                        <span>-$5</span>
+                    </li>
+                    <li class="body-aside">
+                        <div>
+                            Total <small>USD</small>
+                        </div>
+                        <span><strong>$20</strong></span>
+                    </li>
+                </ul><br>
+                <div class="promo-code">
+                    <input type="text">
+                    <button type="submit">Redeem</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>© 2017–2021 Company Name</p>
+            <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
