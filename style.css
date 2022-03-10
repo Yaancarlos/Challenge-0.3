@@ -233,7 +233,7 @@ form>h2{
 .block-input input {
     padding: 8px 12px;
     flex: 0 0 90.5%;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
     border: 1px solid #ced4da;
 }
 
@@ -243,6 +243,15 @@ form>h2{
 
 .email-input input {
     width: 97.5%;
+}
+
+.user-name-div input {
+    flex: 0 0 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.user-name-container {
+    padding-right: 9%;
 }
 
 .selection-list {
@@ -464,4 +473,19 @@ footer {
         padding: 0 15px;
     }
 
+    .name-input-form {
+        flex: 1 0 70%;
+    }
+
+    .name-input-form input {
+        width: 97%;
+    }
+
+    .user-name-div input {
+        flex: 0 0 100%;
+    }
+
+    .user-name-container {
+        padding-right: 12%;
+    }
 }
