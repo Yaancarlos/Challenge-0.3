@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout example</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./bootstrap-logo-3C30FB2A16-seeklogo.com.png" type="image/x-icon">
     <link rel="icon" href="./bootstrap-logo.svg">
 </head>
 <body>
@@ -76,7 +77,7 @@
                             <label for="last-input">Last name</label><br>
                             <input type="text" name="" id="last-input" required>
                         </div>
-                        <div class="block-input user-name-container">
+                        <div class="block-input">
                             <label for="user-name">User name</label>
                             <div class="user-name-div">
                                 <span class="span-user">@</span><input type="text" id="user-name" required placeholder="Username">
@@ -127,19 +128,17 @@
                     </div>
                     <hr>
                     <h4>Payment</h4>
-                    <div>
-                        <div class="type-payment">
-                            <input type="radio" name="payment" id="credit" required>
-                            <label for="credit">Credit card</label>
-                        </div>
-                        <div class="type-payment">
-                            <input type="radio" name="payment" id="debit" required>
-                            <label for="debit">Debit card</label>
-                        </div>
-                        <div class="type-payment">
-                            <input type="radio" name="payment" id="paypal" required>
-                            <label for="paypal">Paypal</label>
-                        </div>
+                    <div class="payment__box">
+                        <label class="example" for="example__radio-1">
+                            <input type="radio" class="example__radio" name="payment" id="example__radio-1">Credit card
+                            <span class="mark"></span>
+                        </label>    <label class="example" for="example__radio-2">
+                            <input type="radio" class="example__radio" name="payment" id="example__radio-2">Debit card
+                            <span class="mark"></span>
+                        </label>    <label class="example" for="example__radio-3">
+                            <input type="radio" class="example__radio" name="payment" id="example__radio-3">Paypal
+                            <span class="mark"></span>
+                        </label>
                     </div>
                     <div class="pay-type">
                         <div class="inf-card">

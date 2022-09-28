@@ -233,7 +233,7 @@ form>h2{
 .block-input input {
     padding: 8px 12px;
     flex: 0 0 90.5%;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     border: 1px solid #ced4da;
 }
 
@@ -243,15 +243,6 @@ form>h2{
 
 .email-input input {
     width: 97.5%;
-}
-
-.user-name-div input {
-    flex: 0 0 100%;
-    border-radius: 0 5px 5px 0;
-}
-
-.user-name-container {
-    padding-right: 9%;
 }
 
 .selection-list {
@@ -323,8 +314,56 @@ input[type=radio] {
     display: none;
 }
 
-input[type=radio] + label {
+.example {
+    position: relative;
+    padding-left: 1.3rem;
+}
+
+.example__radio:checked ~ .mark {
+    background: #0054d3;
+    border-color: #0054d3;
+}
+
+.mark {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 999px;
+    position: absolute;
+    top: 4px;
+    left: 0;
     cursor: pointer;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+
+.example__radio:checked ~ .mark::before {
+    visibility:visible;
+}
+
+.mark::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 999px;
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    left: 2.5px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+
+.payment__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
 }
 
 input[type=radio] + label::before {
@@ -473,19 +512,4 @@ footer {
         padding: 0 15px;
     }
 
-    .name-input-form {
-        flex: 1 0 70%;
-    }
-
-    .name-input-form input {
-        width: 97%;
-    }
-
-    .user-name-div input {
-        flex: 0 0 100%;
-    }
-
-    .user-name-container {
-        padding-right: 12%;
-    }
 }
